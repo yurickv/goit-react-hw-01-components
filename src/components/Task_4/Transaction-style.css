@@ -1,0 +1,26 @@
+.section-transaction {
+  width: 330px;
+  background-color: #d7e0d0;
+  padding: 10px;
+}
+.transaction-header th {
+  width: calc(100% / 3);
+  border: 0.5px solid;
+  padding: 5px;
+  background-color: rgb(80, 165, 239);
+}
+.transaction-header {
+  display: flex;
+}
+.transaction-list tr:nth-child(even) {
+  background-color: lightyellow;
+}
+.transaction-list tr:nth-child(odd) {
+  background-color: aliceblue;
+}
+
+.transaction-item td {
+  width: 110px;
+  text-align: center;
+  padding: 5px;
+}

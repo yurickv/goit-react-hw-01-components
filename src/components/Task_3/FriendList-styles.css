@@ -1,9 +1,9 @@
 .section-friend {
-  width: 350px;
+  width: 330px;
   background-color: #d7e0d0;
+  padding: 10px;
 }
 .friend-list {
-  padding: 10px;
   display: flex;
   flex-direction: column;
   gap: 10px;
