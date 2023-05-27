@@ -23,4 +23,6 @@ export const TransactionHistory = ({ items }) => {
             </tbody>
         </section>
     )
-} 
+}
+
+

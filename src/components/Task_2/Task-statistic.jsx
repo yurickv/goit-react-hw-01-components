@@ -1,5 +1,6 @@
 import './Statistics-style.css'
 
+
 export const Statistics = ({ MainTitle, stats }) => {
 
     return (

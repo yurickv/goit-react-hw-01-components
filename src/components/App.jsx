@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import user from './user.json';
 import data from './data.json';
 import friend from './friends.json'
@@ -42,3 +43,40 @@ export const App = () => {
     </div>
   );
 };
+
+user.propTypes = {
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  stats: PropTypes.shape({
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
+  })
+}
+
+data.propTypes = {
+  id: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  percentage: PropTypes.number.isRequired,
+}
+
+friend.propTypes = {
+  friend: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    vatar: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    isOnline: PropTypes.bool.isRequired,
+  })
+
+}
+
+transaction.propTypes = {
+  item: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    type: PropTypes.string.isRequired,
+    amount: PropTypes.number.isRequired,
+    currency: PropTypes.string.isRequired,
+  })
+}

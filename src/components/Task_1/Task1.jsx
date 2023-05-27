@@ -1,4 +1,5 @@
-import './Task-style1.css'
+import './Task-style1.css';
+
 
 export const Profile = ({ userName, tag, locationUser, avatarUser, stats }) => {
     return (
@@ -30,3 +31,5 @@ export const Profile = ({ userName, tag, locationUser, avatarUser, stats }) => {
             </ul>
         </div>)
 }
+
+

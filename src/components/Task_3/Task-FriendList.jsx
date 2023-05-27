@@ -1,5 +1,6 @@
 import './FriendList-styles.css'
 
+
 export const FriendList = ({ friensdData }) => {
 
     return (
@@ -18,4 +19,5 @@ export const FriendList = ({ friensdData }) => {
             </ul>
         </section>
     )
-} 
+}
+
