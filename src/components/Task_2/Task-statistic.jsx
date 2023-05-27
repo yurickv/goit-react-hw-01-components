@@ -1,4 +1,4 @@
-import css from './Statistics-style.css'
+import './Statistics-style.css'
 
 export const Statistics = ({ MainTitle, stats }) => {
 

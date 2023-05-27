@@ -1,8 +1,8 @@
-import css from './Task-style1.css'
+import './Task-style1.css'
 
 export const Profile = ({ userName, tag, locationUser, avatarUser, stats }) => {
     return (
-        <div className="profile">
+        <div className='profile'>
             <div className="description">
                 <img
                     src={avatarUser}
