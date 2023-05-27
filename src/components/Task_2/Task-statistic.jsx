@@ -1,4 +1,4 @@
-
+import css from './Statistics-style.css'
 
 export const Statistics = ({ MainTitle, stats }) => {
 
@@ -9,7 +9,7 @@ export const Statistics = ({ MainTitle, stats }) => {
             <ul className="stat-list">
                 {stats.map(stat => {
                     return (
-                        <li className="item" key={stat.id}>
+                        <li className="item" key={stat.id} style={{ backgroundColor: getRandomHexColor() }}>
                             <span className="label">{stat.label}</span>
                             <span className="percentage">{stat.percentage}%</span>
                         </li>
@@ -19,5 +19,9 @@ export const Statistics = ({ MainTitle, stats }) => {
         </section>
     )
 }
-
+function getRandomHexColor() {
+    return `#${Math.floor(Math.random() * 16777215)
+        .toString(16)
+        .padStart(6, 0)}`;
+}
 

@@ -1,13 +1,17 @@
 import user from './user.json';
-import data from './data.json'
+import data from './data.json';
+import friend from './friends.json'
 import { Profile } from 'components/Task_1/Task1'
 import { Statistics } from 'components/Task_2/Task-statistic'
+import { FriendList } from 'components/Task_3/Task-FriendList'
 
 export const App = () => {
   return (
     <div
       style={{
         display: 'flex',
+        flexDirection: 'column',
+        gap: 30,
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 16,
@@ -24,7 +28,11 @@ export const App = () => {
       />
       <Statistics
         MainTitle={"Upload stats"}
-        stats={data} />
+        stats={data}
+      />
+      <FriendList
+        friensdData={friend}
+      />
 
     </div>
   );
