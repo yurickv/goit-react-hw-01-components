@@ -1,14 +1,14 @@
-.section-friend {
+.sectionFriend {
   width: 330px;
   background-color: #d7e0d0;
   padding: 10px;
 }
-.friend-list {
+.friendList {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.friend-item {
+.friendItem {
   display: flex;
   gap: 10px;
   align-items: center;
@@ -16,21 +16,21 @@
   background-color: aliceblue;
   border-radius: 5px;
 }
-.friend-avatar {
+.friendAvatar {
   display: block;
   width: 75px;
   height: auto;
   border-radius: 5px;
   background-color: #ffffff;
 }
-.status-on {
+.statusOn {
   width: 15px;
   height: 15px;
   background-color: green;
   border-radius: 50%;
   border: 1px solid rgb(12, 40, 12);
 }
-.status-off {
+.statusOff {
   width: 15px;
   height: 15px;
   background-color: red;

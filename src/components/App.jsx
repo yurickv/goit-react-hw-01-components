@@ -5,10 +5,10 @@ import data from './data.json';
 import friend from './friends.json'
 import transaction from './transactions.json'
 
-import { Profile } from 'components/Task_1/Task1'
-import { Statistics } from 'components/Task_2/Task-statistic'
-import { FriendList } from 'components/Task_3/Task-FriendList'
-import { TransactionHistory } from 'components/Task_4/Task-transaction'
+import { Profile } from 'components/Task_1_profile/Profile'
+import { Statistics } from 'components/Task_2_statistic/Statistic'
+import { FriendList } from 'components/Task_3_FrienfList/FriendList'
+import { TransactionHistory } from 'components/Task_4_Transaction/Transaction'
 
 export const App = () => {
   return (
@@ -21,7 +21,7 @@ export const App = () => {
         stats={user.stats}
       />
       <Statistics
-        MainTitle={"Upload stats"}
+        mainTitle={"Upload stats"}
         stats={data}
       />
       <FriendList
@@ -37,6 +37,20 @@ export const App = () => {
 
 
 
+
+
+
+const appStyle = {
+  display: 'flex',
+  flexDirection: 'column',
+  gap: 30,
+  justifyContent: 'center',
+  alignItems: 'center',
+  fontSize: 16,
+  color: '#010101',
+}
+
+
 user.propTypes = {
   username: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
@@ -49,36 +63,7 @@ user.propTypes = {
   })
 }
 
-data.propTypes = {
-  id: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
-  percentage: PropTypes.number.isRequired,
-}
 
-friend.propTypes = {
-  friend: PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    vatar: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    isOnline: PropTypes.bool.isRequired,
-  })
 
-}
 
-transaction.propTypes = {
-  item: PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    type: PropTypes.string.isRequired,
-    amount: PropTypes.number.isRequired,
-    currency: PropTypes.string.isRequired,
-  })
-}
-const appStyle = {
-  display: 'flex',
-  flexDirection: 'column',
-  gap: 30,
-  justifyContent: 'center',
-  alignItems: 'center',
-  fontSize: 16,
-  color: '#010101',
-}
+
