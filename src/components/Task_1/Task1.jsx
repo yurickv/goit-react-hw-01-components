@@ -1,4 +1,5 @@
 import './Task-style1.css';
+import { FcAddressBook, FcHome, FcLike, FcReddit, FcReading } from "react-icons/fc";
 
 
 export const Profile = ({ userName, tag, locationUser, avatarUser, stats }) => {
@@ -11,22 +12,22 @@ export const Profile = ({ userName, tag, locationUser, avatarUser, stats }) => {
                     className="avatar"
                 />
                 <p className="name">{userName}</p>
-                <p className="tag">@{tag}</p>
-                <p className="location">{locationUser}</p>
+                <p className="tag"> <FcAddressBook className='icon' />{tag}</p>
+                <p className="location"><FcHome className='icon' />{locationUser}</p>
             </div>
 
             <ul className="stats">
                 <li>
                     <span className="label">Followers</span>
-                    <span className="quantity">{stats.followers}</span>
+                    <span className="quantity"><FcReddit className='icon' />{stats.followers}</span>
                 </li>
                 <li>
                     <span className="label">Views</span>
-                    <span className="quantity">{stats.views}</span>
+                    <span className="quantity"><FcReading className='icon' />{stats.views}</span>
                 </li>
                 <li>
                     <span className="label">Likes</span>
-                    <span className="quantity">{stats.likes}</span>
+                    <span className="quantity"><FcLike className='icon' />{stats.likes}</span>
                 </li>
             </ul>
         </div>)
